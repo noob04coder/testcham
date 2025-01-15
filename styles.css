@@ -11,10 +11,24 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+    /* gap: 5rem */
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: start;
     align-items: center;
 }
 
+.backArrow {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem 2rem;
+    margin-top: .7rem;
+}
 
 .content {
     display: flex;
@@ -22,38 +36,31 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
+    padding: .5rem;
     border: 2px solid black;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 
-
-.backArrow {
-    width: 3rem;
-    height: 3rem;
-    padding: 1rem 2rem;
-    margin-bottom: 1rem;
-}
 
 .content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
-    padding: 0;
+    padding: 0 .7rem;
     margin: 0;
     text-transform: uppercase;
 }
 
 .chart-container {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 2rem auto;
 }
 
 .details {
-    margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
     text-transform: uppercase;
 }
@@ -63,7 +70,7 @@ body {
     margin: 1rem auto;
     border-collapse: collapse;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .details-table th,
@@ -99,4 +106,59 @@ body {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
+}
+
+@media(max-width: 900px) {
+
+    .backArrow {
+        width: 3rem;
+        height: 3rem;
+        padding: .5rem 1rem;
+    }
+
+    .content {
+        margin-bottom: 15px;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .chart-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .details {
+        font-size: .8em;
+    }
+}
+
+@media(max-width: 600px) {
+
+
+    .backArrow {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: .5rem 1rem;
+    }
+
+    .content {
+        width: 80%;
+        margin-top: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .chart-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .details {
+        font-size: .5em;
+    }
 }
