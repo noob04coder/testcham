@@ -38,7 +38,7 @@ body {
     /* padding: .5rem 2rem; */
     display: flex;
     align-items: center;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     gap: 10px;
     text-decoration: none;
     color: white;
@@ -131,7 +131,6 @@ body {
 .links img {
     width: 4rem;
     height: 4rem;
-    /* background-color: black; */
     border-radius: 50%;
 }
 
@@ -193,138 +192,133 @@ body {
 .rightBtn:hover {
     background-color: rgb(87, 26, 0);
     border: solid 6px black;
+}
 
-    .discord {
-        transform: rotate(-6deg);
+.center-Btn:hover {
+    background-color: rgb(218, 7, 7);
+    border: solid 6px black;
+    /* text-decoration: underline; */
+}
+
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: .5rem 1rem;
     }
 
-    .insta {
-        transform: rotate(-6deg);
+    .nav-brand {
+        font-size: 2rem;
     }
 
-    .telegram {
-        transform: rotate(6deg);
+    .nav-btn {
+        padding: .3rem .8rem;
+        font-size: .8rem;
     }
 
-    .x {
-        transform: rotate(6deg);
+    .main h1 {
+        font-size: 3rem;
     }
 
-    .center-Btn:hover {
-        background-color: rgb(218, 7, 7);
-        border: solid 6px black;
-        /* text-decoration: underline; */
+    .main img {
+        width: 18rem;
+        height: 18rem;
     }
 
-
-    @media (max-width: 800px) {
-        .navbar {
-            padding: .5rem 1rem;
-
-        }
-
-        .nav-brand {
-            font-size: 2rem;
-        }
-
-        .nav-btn {
-            padding: .3rem .8rem;
-            font-size: .8rem;
-        }
-
-        .main h1 {
-            font-size: 3rem;
-        }
-
-        .main img {
-            width: 18rem;
-            height: 18rem;
-        }
-
-        .main {
-            margin-bottom: 3rem;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: space-evenly;
-            align-items: center;
-            gap: 2rem;
-
-            /* margin-top: 1rem; */
-        }
-
-        .links img {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-
-        .centerBtn {
-            padding: .5rem 1rem;
-            font-size: 2rem;
-            transform: rotate(0deg);
-            margin: 0;
-        }
-
-        .rightBtn {
-            padding: .3rem 1rem;
-            font-size: .8rem;
-        }
+    .main {
+        margin-bottom: 3rem;
     }
 
-    @media (max-width: 650px) {
-        .navbar {
-            padding: .5rem 1rem;
-            margin-bottom: 1.5rem;
-        }
+    .links {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
 
-        .nav-brand {
-            font-size: 1.5rem;
-        }
-
-        .nav-btn {
-            padding: .2rem .5rem;
-            font-size: .8rem;
-        }
-
-        .nav-img {
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-
-        .main h1 {
-            font-size: 3rem;
-        }
-
-        .main img {
-            width: 15rem;
-            height: 15rem;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: space-between;
-            align-items: center;
-            /* margin-top: 1rem; */
-            gap: 2rem;
-        }
-
-        .links img {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-
-        .centerBtn {
-            padding: .3rem 1rem;
-            font-size: 2rem;
-            transform: rotate(0deg);
-            margin: 0;
-        }
-
-        .rightBtn {
-            padding: .5rem 1rem;
-            font-size: .8rem;
-        }
+        /* margin-top: 1rem; */
     }
+
+    .links img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .centerBtn {
+        padding: .5rem 1rem;
+        font-size: 1.3rem;
+        transform: rotate(0deg);
+        margin: 0;
+    }
+
+    .centerBtn2 {
+        padding: .5rem 1rem;
+        font-size: 1.3rem;
+        transform: rotate(0deg);
+        margin: 0;
+    }
+
+    .rightBtn {
+        padding: .5rem 1rem;
+        font-size: 1.3rem;
+        transform: rotate(0deg);
+        margin: 0;
+    }
+
+    .leftLinks img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .nav-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    .navright {
+        font-size: 1.5rem;
+    }
+
+    .navright img {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .main img {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .main {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .header {
+        font-size: 3rem;
+    }
+
+    .headerText {
+        font-size: 1.5rem;
+    }
+
+    .centerLinks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .links {
+        height: 20vh;
+
+    }
+}
